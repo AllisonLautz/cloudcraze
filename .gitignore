@@ -46,3 +46,5 @@ Thumbs.db
 config.rb
 calculator/*
 videos/*
+node_modules/*
+package-lock.json
