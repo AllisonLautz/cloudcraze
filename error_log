@@ -1,0 +1,4 @@
+[25-Oct-2016 19:44:57 America/Chicago] PHP Fatal error:  Call to undefined function update_option() in /home/craze/public_html/wp-content/themes/cloudcraze/404.php on line 7
+[26-Oct-2016 03:42:36 America/Chicago] PHP Fatal error:  Call to undefined function update_option() in /home/craze/public_html/wp-content/themes/cloudcraze/404.php on line 7
+[19-Jan-2017 09:09:51 America/Chicago] PHP Fatal error:  Call to undefined function update_option() in /home/craze/public_html/wp-content/themes/cloudcraze/index.php on line 7
+[19-Mar-2017 14:27:56 America/Chicago] PHP Fatal error:  Call to undefined function update_option() in /home/craze/public_html/wp-content/themes/cloudcraze/404.php on line 7
