@@ -1,0 +1,2299 @@
+/*
+ * Grid
+ */
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,500,700");
+@import url("https://use.typekit.net/uec4zun.css");
+/* line 6, ../scss/calc.scss */
+.container-fluid {
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 2rem;
+  padding-left: 2rem;
+}
+
+/* line 13, ../scss/calc.scss */
+.row {
+  box-sizing: border-box;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  -ms-flex: 0 1 auto;
+  -webkit-box-flex: 0;
+  flex: 0 1 auto;
+  -ms-flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  flex-direction: row;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -10px;
+  margin-left: -10px;
+}
+
+/* line 31, ../scss/calc.scss */
+.row.reverse {
+  -ms-flex-direction: row-reverse;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+  flex-direction: row-reverse;
+}
+
+/* line 38, ../scss/calc.scss */
+.col.reverse {
+  -ms-flex-direction: column-reverse;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+  flex-direction: column-reverse;
+}
+
+/* line 45, ../scss/calc.scss */
+.col-xs,
+.col-xs-1,
+.col-xs-2,
+.col-xs-3,
+.col-xs-4,
+.col-xs-5,
+.col-xs-6,
+.col-xs-7,
+.col-xs-8,
+.col-xs-9,
+.col-xs-10,
+.col-xs-11,
+.col-xs-12 {
+  box-sizing: border-box;
+  -ms-flex: 0 0 auto;
+  -webkit-box-flex: 0;
+  flex: 0 0 auto;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+/* line 66, ../scss/calc.scss */
+.col-xs {
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  -webkit-box-flex: 1;
+  flex-grow: 1;
+  -ms-flex-preferred-size: 0;
+  flex-basis: 0;
+  max-width: 100%;
+}
+
+/* line 76, ../scss/calc.scss */
+.col-xs-1 {
+  -ms-flex-preferred-size: 8.333%;
+  flex-basis: 8.333%;
+  max-width: 8.333%;
+}
+
+/* line 82, ../scss/calc.scss */
+.col-xs-2 {
+  -ms-flex-preferred-size: 16.667%;
+  flex-basis: 16.667%;
+  max-width: 16.667%;
+}
+
+/* line 88, ../scss/calc.scss */
+.col-xs-3 {
+  -ms-flex-preferred-size: 25%;
+  flex-basis: 25%;
+  max-width: 25%;
+}
+
+/* line 94, ../scss/calc.scss */
+.col-xs-4 {
+  -ms-flex-preferred-size: 33.333%;
+  flex-basis: 33.333%;
+  max-width: 33.333%;
+}
+
+/* line 100, ../scss/calc.scss */
+.col-xs-5 {
+  -ms-flex-preferred-size: 41.667%;
+  flex-basis: 41.667%;
+  max-width: 41.667%;
+}
+
+/* line 106, ../scss/calc.scss */
+.col-xs-6 {
+  -ms-flex-preferred-size: 50%;
+  flex-basis: 50%;
+  max-width: 50%;
+}
+
+/* line 112, ../scss/calc.scss */
+.col-xs-7 {
+  -ms-flex-preferred-size: 58.333%;
+  flex-basis: 58.333%;
+  max-width: 58.333%;
+}
+
+/* line 118, ../scss/calc.scss */
+.col-xs-8 {
+  -ms-flex-preferred-size: 66.667%;
+  flex-basis: 66.667%;
+  max-width: 66.667%;
+}
+
+/* line 124, ../scss/calc.scss */
+.col-xs-9 {
+  -ms-flex-preferred-size: 75%;
+  flex-basis: 75%;
+  max-width: 75%;
+}
+
+/* line 130, ../scss/calc.scss */
+.col-xs-10 {
+  -ms-flex-preferred-size: 83.333%;
+  flex-basis: 83.333%;
+  max-width: 83.333%;
+}
+
+/* line 136, ../scss/calc.scss */
+.col-xs-11 {
+  -ms-flex-preferred-size: 91.667%;
+  flex-basis: 91.667%;
+  max-width: 91.667%;
+}
+
+/* line 142, ../scss/calc.scss */
+.col-xs-12 {
+  -ms-flex-preferred-size: 100%;
+  flex-basis: 100%;
+  max-width: 100%;
+}
+
+/* line 148, ../scss/calc.scss */
+.col-xs-offset-1 {
+  margin-left: 8.333%;
+}
+
+/* line 152, ../scss/calc.scss */
+.col-xs-offset-2 {
+  margin-left: 16.667%;
+}
+
+/* line 156, ../scss/calc.scss */
+.col-xs-offset-3 {
+  margin-left: 25%;
+}
+
+/* line 160, ../scss/calc.scss */
+.col-xs-offset-4 {
+  margin-left: 33.333%;
+}
+
+/* line 164, ../scss/calc.scss */
+.col-xs-offset-5 {
+  margin-left: 41.667%;
+}
+
+/* line 168, ../scss/calc.scss */
+.col-xs-offset-6 {
+  margin-left: 50%;
+}
+
+/* line 172, ../scss/calc.scss */
+.col-xs-offset-7 {
+  margin-left: 58.333%;
+}
+
+/* line 176, ../scss/calc.scss */
+.col-xs-offset-8 {
+  margin-left: 66.667%;
+}
+
+/* line 180, ../scss/calc.scss */
+.col-xs-offset-9 {
+  margin-left: 75%;
+}
+
+/* line 184, ../scss/calc.scss */
+.col-xs-offset-10 {
+  margin-left: 83.333%;
+}
+
+/* line 188, ../scss/calc.scss */
+.col-xs-offset-11 {
+  margin-left: 91.667%;
+}
+
+/* line 192, ../scss/calc.scss */
+.start-xs {
+  -ms-flex-pack: start;
+  -webkit-box-pack: start;
+  justify-content: flex-start;
+  text-align: start;
+}
+
+/* line 199, ../scss/calc.scss */
+.center-xs {
+  -ms-flex-pack: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+}
+
+/* line 206, ../scss/calc.scss */
+.end-xs {
+  -ms-flex-pack: end;
+  -webkit-box-pack: end;
+  justify-content: flex-end;
+  text-align: end;
+}
+
+/* line 213, ../scss/calc.scss */
+.top-xs {
+  -ms-flex-align: start;
+  -webkit-box-align: start;
+  align-items: flex-start;
+}
+
+/* line 219, ../scss/calc.scss */
+.middle-xs {
+  -ms-flex-align: center;
+  -webkit-box-align: center;
+  align-items: center;
+}
+
+/* line 225, ../scss/calc.scss */
+.bottom-xs {
+  -ms-flex-align: end;
+  -webkit-box-align: end;
+  align-items: flex-end;
+}
+
+/* line 231, ../scss/calc.scss */
+.around-xs {
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+}
+
+/* line 236, ../scss/calc.scss */
+.between-xs {
+  -ms-flex-pack: justify;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+}
+
+/* line 242, ../scss/calc.scss */
+.first-xs {
+  -ms-flex-order: -1;
+  -webkit-box-ordinal-group: 0;
+  order: -1;
+}
+
+/* line 248, ../scss/calc.scss */
+.last-xs {
+  -ms-flex-order: 1;
+  -webkit-box-ordinal-group: 2;
+  order: 1;
+}
+
+@media (min-width: 48em) {
+  /* line 255, ../scss/calc.scss */
+  .container {
+    width: 46rem;
+  }
+
+  /* line 259, ../scss/calc.scss */
+  .col-sm,
+  .col-sm-1,
+  .col-sm-2,
+  .col-sm-3,
+  .col-sm-4,
+  .col-sm-5,
+  .col-sm-6,
+  .col-sm-7,
+  .col-sm-8,
+  .col-sm-9,
+  .col-sm-10,
+  .col-sm-11,
+  .col-sm-12 {
+    box-sizing: border-box;
+    -ms-flex: 0 0 auto;
+    -webkit-box-flex: 0;
+    flex: 0 0 auto;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+
+  /* line 280, ../scss/calc.scss */
+  .col-sm {
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    -webkit-box-flex: 1;
+    flex-grow: 1;
+    -ms-flex-preferred-size: 0;
+    flex-basis: 0;
+    max-width: 100%;
+  }
+
+  /* line 290, ../scss/calc.scss */
+  .col-sm-1 {
+    -ms-flex-preferred-size: 8.333%;
+    flex-basis: 8.333%;
+    max-width: 8.333%;
+  }
+
+  /* line 296, ../scss/calc.scss */
+  .col-sm-2 {
+    -ms-flex-preferred-size: 16.667%;
+    flex-basis: 16.667%;
+    max-width: 16.667%;
+  }
+
+  /* line 302, ../scss/calc.scss */
+  .col-sm-3 {
+    -ms-flex-preferred-size: 25%;
+    flex-basis: 25%;
+    max-width: 25%;
+  }
+
+  /* line 308, ../scss/calc.scss */
+  .col-sm-4 {
+    -ms-flex-preferred-size: 33.333%;
+    flex-basis: 33.333%;
+    max-width: 33.333%;
+  }
+
+  /* line 314, ../scss/calc.scss */
+  .col-sm-5 {
+    -ms-flex-preferred-size: 41.667%;
+    flex-basis: 41.667%;
+    max-width: 41.667%;
+  }
+
+  /* line 320, ../scss/calc.scss */
+  .col-sm-6 {
+    -ms-flex-preferred-size: 50%;
+    flex-basis: 50%;
+    max-width: 50%;
+  }
+
+  /* line 326, ../scss/calc.scss */
+  .col-sm-7 {
+    -ms-flex-preferred-size: 58.333%;
+    flex-basis: 58.333%;
+    max-width: 58.333%;
+  }
+
+  /* line 332, ../scss/calc.scss */
+  .col-sm-8 {
+    -ms-flex-preferred-size: 66.667%;
+    flex-basis: 66.667%;
+    max-width: 66.667%;
+  }
+
+  /* line 338, ../scss/calc.scss */
+  .col-sm-9 {
+    -ms-flex-preferred-size: 75%;
+    flex-basis: 75%;
+    max-width: 75%;
+  }
+
+  /* line 344, ../scss/calc.scss */
+  .col-sm-10 {
+    -ms-flex-preferred-size: 83.333%;
+    flex-basis: 83.333%;
+    max-width: 83.333%;
+  }
+
+  /* line 350, ../scss/calc.scss */
+  .col-sm-11 {
+    -ms-flex-preferred-size: 91.667%;
+    flex-basis: 91.667%;
+    max-width: 91.667%;
+  }
+
+  /* line 356, ../scss/calc.scss */
+  .col-sm-12 {
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+
+  /* line 362, ../scss/calc.scss */
+  .col-sm-offset-1 {
+    margin-left: 8.333%;
+  }
+
+  /* line 366, ../scss/calc.scss */
+  .col-sm-offset-2 {
+    margin-left: 16.667%;
+  }
+
+  /* line 370, ../scss/calc.scss */
+  .col-sm-offset-3 {
+    margin-left: 25%;
+  }
+
+  /* line 374, ../scss/calc.scss */
+  .col-sm-offset-4 {
+    margin-left: 33.333%;
+  }
+
+  /* line 378, ../scss/calc.scss */
+  .col-sm-offset-5 {
+    margin-left: 41.667%;
+  }
+
+  /* line 382, ../scss/calc.scss */
+  .col-sm-offset-6 {
+    margin-left: 50%;
+  }
+
+  /* line 386, ../scss/calc.scss */
+  .col-sm-offset-7 {
+    margin-left: 58.333%;
+  }
+
+  /* line 390, ../scss/calc.scss */
+  .col-sm-offset-8 {
+    margin-left: 66.667%;
+  }
+
+  /* line 394, ../scss/calc.scss */
+  .col-sm-offset-9 {
+    margin-left: 75%;
+  }
+
+  /* line 398, ../scss/calc.scss */
+  .col-sm-offset-10 {
+    margin-left: 83.333%;
+  }
+
+  /* line 402, ../scss/calc.scss */
+  .col-sm-offset-11 {
+    margin-left: 91.667%;
+  }
+
+  /* line 406, ../scss/calc.scss */
+  .start-sm {
+    -ms-flex-pack: start;
+    -webkit-box-pack: start;
+    justify-content: flex-start;
+    text-align: start;
+  }
+
+  /* line 413, ../scss/calc.scss */
+  .center-sm {
+    -ms-flex-pack: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+  }
+
+  /* line 420, ../scss/calc.scss */
+  .end-sm {
+    -ms-flex-pack: end;
+    -webkit-box-pack: end;
+    justify-content: flex-end;
+    text-align: end;
+  }
+
+  /* line 427, ../scss/calc.scss */
+  .top-sm {
+    -ms-flex-align: start;
+    -webkit-box-align: start;
+    align-items: flex-start;
+  }
+
+  /* line 433, ../scss/calc.scss */
+  .middle-sm {
+    -ms-flex-align: center;
+    -webkit-box-align: center;
+    align-items: center;
+  }
+
+  /* line 439, ../scss/calc.scss */
+  .bottom-sm {
+    -ms-flex-align: end;
+    -webkit-box-align: end;
+    align-items: flex-end;
+  }
+
+  /* line 445, ../scss/calc.scss */
+  .around-sm {
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+  }
+
+  /* line 450, ../scss/calc.scss */
+  .between-sm {
+    -ms-flex-pack: justify;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+  }
+
+  /* line 456, ../scss/calc.scss */
+  .first-sm {
+    -ms-flex-order: -1;
+    -webkit-box-ordinal-group: 0;
+    order: -1;
+  }
+
+  /* line 462, ../scss/calc.scss */
+  .last-sm {
+    -ms-flex-order: 1;
+    -webkit-box-ordinal-group: 2;
+    order: 1;
+  }
+}
+@media (min-width: 62em) {
+  /* line 470, ../scss/calc.scss */
+  .container {
+    width: 61rem;
+  }
+
+  /* line 474, ../scss/calc.scss */
+  .col-md,
+  .col-md-1,
+  .col-md-2,
+  .col-md-3,
+  .col-md-4,
+  .col-md-5,
+  .col-md-6,
+  .col-md-7,
+  .col-md-8,
+  .col-md-9,
+  .col-md-10,
+  .col-md-11,
+  .col-md-12 {
+    box-sizing: border-box;
+    -ms-flex: 0 0 auto;
+    -webkit-box-flex: 0;
+    flex: 0 0 auto;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+
+  /* line 495, ../scss/calc.scss */
+  .col-md {
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    -webkit-box-flex: 1;
+    flex-grow: 1;
+    -ms-flex-preferred-size: 0;
+    flex-basis: 0;
+    max-width: 100%;
+  }
+
+  /* line 505, ../scss/calc.scss */
+  .col-md-1 {
+    -ms-flex-preferred-size: 8.333%;
+    flex-basis: 8.333%;
+    max-width: 8.333%;
+  }
+
+  /* line 511, ../scss/calc.scss */
+  .col-md-2 {
+    -ms-flex-preferred-size: 16.667%;
+    flex-basis: 16.667%;
+    max-width: 16.667%;
+  }
+
+  /* line 517, ../scss/calc.scss */
+  .col-md-3 {
+    -ms-flex-preferred-size: 25%;
+    flex-basis: 25%;
+    max-width: 25%;
+  }
+
+  /* line 523, ../scss/calc.scss */
+  .col-md-4 {
+    -ms-flex-preferred-size: 33.333%;
+    flex-basis: 33.333%;
+    max-width: 33.333%;
+  }
+
+  /* line 529, ../scss/calc.scss */
+  .col-md-5 {
+    -ms-flex-preferred-size: 41.667%;
+    flex-basis: 41.667%;
+    max-width: 41.667%;
+  }
+
+  /* line 535, ../scss/calc.scss */
+  .col-md-6 {
+    -ms-flex-preferred-size: 50%;
+    flex-basis: 50%;
+    max-width: 50%;
+  }
+
+  /* line 541, ../scss/calc.scss */
+  .col-md-7 {
+    -ms-flex-preferred-size: 58.333%;
+    flex-basis: 58.333%;
+    max-width: 58.333%;
+  }
+
+  /* line 547, ../scss/calc.scss */
+  .col-md-8 {
+    -ms-flex-preferred-size: 66.667%;
+    flex-basis: 66.667%;
+    max-width: 66.667%;
+  }
+
+  /* line 553, ../scss/calc.scss */
+  .col-md-9 {
+    -ms-flex-preferred-size: 75%;
+    flex-basis: 75%;
+    max-width: 75%;
+  }
+
+  /* line 559, ../scss/calc.scss */
+  .col-md-10 {
+    -ms-flex-preferred-size: 83.333%;
+    flex-basis: 83.333%;
+    max-width: 83.333%;
+  }
+
+  /* line 565, ../scss/calc.scss */
+  .col-md-11 {
+    -ms-flex-preferred-size: 91.667%;
+    flex-basis: 91.667%;
+    max-width: 91.667%;
+  }
+
+  /* line 571, ../scss/calc.scss */
+  .col-md-12 {
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+
+  /* line 577, ../scss/calc.scss */
+  .col-md-offset-1 {
+    margin-left: 8.333%;
+  }
+
+  /* line 581, ../scss/calc.scss */
+  .col-md-offset-2 {
+    margin-left: 16.667%;
+  }
+
+  /* line 585, ../scss/calc.scss */
+  .col-md-offset-3 {
+    margin-left: 25%;
+  }
+
+  /* line 589, ../scss/calc.scss */
+  .col-md-offset-4 {
+    margin-left: 33.333%;
+  }
+
+  /* line 593, ../scss/calc.scss */
+  .col-md-offset-5 {
+    margin-left: 41.667%;
+  }
+
+  /* line 597, ../scss/calc.scss */
+  .col-md-offset-6 {
+    margin-left: 50%;
+  }
+
+  /* line 601, ../scss/calc.scss */
+  .col-md-offset-7 {
+    margin-left: 58.333%;
+  }
+
+  /* line 605, ../scss/calc.scss */
+  .col-md-offset-8 {
+    margin-left: 66.667%;
+  }
+
+  /* line 609, ../scss/calc.scss */
+  .col-md-offset-9 {
+    margin-left: 75%;
+  }
+
+  /* line 613, ../scss/calc.scss */
+  .col-md-offset-10 {
+    margin-left: 83.333%;
+  }
+
+  /* line 617, ../scss/calc.scss */
+  .col-md-offset-11 {
+    margin-left: 91.667%;
+  }
+
+  /* line 621, ../scss/calc.scss */
+  .start-md {
+    -ms-flex-pack: start;
+    -webkit-box-pack: start;
+    justify-content: flex-start;
+    text-align: start;
+  }
+
+  /* line 628, ../scss/calc.scss */
+  .center-md {
+    -ms-flex-pack: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+  }
+
+  /* line 635, ../scss/calc.scss */
+  .end-md {
+    -ms-flex-pack: end;
+    -webkit-box-pack: end;
+    justify-content: flex-end;
+    text-align: end;
+  }
+
+  /* line 642, ../scss/calc.scss */
+  .top-md {
+    -ms-flex-align: start;
+    -webkit-box-align: start;
+    align-items: flex-start;
+  }
+
+  /* line 648, ../scss/calc.scss */
+  .middle-md {
+    -ms-flex-align: center;
+    -webkit-box-align: center;
+    align-items: center;
+  }
+
+  /* line 654, ../scss/calc.scss */
+  .bottom-md {
+    -ms-flex-align: end;
+    -webkit-box-align: end;
+    align-items: flex-end;
+  }
+
+  /* line 660, ../scss/calc.scss */
+  .around-md {
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+  }
+
+  /* line 665, ../scss/calc.scss */
+  .between-md {
+    -ms-flex-pack: justify;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+  }
+
+  /* line 671, ../scss/calc.scss */
+  .first-md {
+    -ms-flex-order: -1;
+    -webkit-box-ordinal-group: 0;
+    order: -1;
+  }
+
+  /* line 677, ../scss/calc.scss */
+  .last-md {
+    -ms-flex-order: 1;
+    -webkit-box-ordinal-group: 2;
+    order: 1;
+  }
+}
+@media (min-width: 75em) {
+  /* line 685, ../scss/calc.scss */
+  .container {
+    width: 71rem;
+  }
+
+  /* line 689, ../scss/calc.scss */
+  .col-lg,
+  .col-lg-1,
+  .col-lg-2,
+  .col-lg-3,
+  .col-lg-4,
+  .col-lg-5,
+  .col-lg-6,
+  .col-lg-7,
+  .col-lg-8,
+  .col-lg-9,
+  .col-lg-10,
+  .col-lg-11,
+  .col-lg-12 {
+    box-sizing: border-box;
+    -ms-flex: 0 0 auto;
+    -webkit-box-flex: 0;
+    flex: 0 0 auto;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+
+  /* line 710, ../scss/calc.scss */
+  .col-lg {
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    -webkit-box-flex: 1;
+    flex-grow: 1;
+    -ms-flex-preferred-size: 0;
+    flex-basis: 0;
+    max-width: 100%;
+  }
+
+  /* line 720, ../scss/calc.scss */
+  .col-lg-1 {
+    -ms-flex-preferred-size: 8.333%;
+    flex-basis: 8.333%;
+    max-width: 8.333%;
+  }
+
+  /* line 726, ../scss/calc.scss */
+  .col-lg-2 {
+    -ms-flex-preferred-size: 16.667%;
+    flex-basis: 16.667%;
+    max-width: 16.667%;
+  }
+
+  /* line 732, ../scss/calc.scss */
+  .col-lg-3 {
+    -ms-flex-preferred-size: 25%;
+    flex-basis: 25%;
+    max-width: 25%;
+  }
+
+  /* line 738, ../scss/calc.scss */
+  .col-lg-4 {
+    -ms-flex-preferred-size: 33.333%;
+    flex-basis: 33.333%;
+    max-width: 33.333%;
+  }
+
+  /* line 744, ../scss/calc.scss */
+  .col-lg-5 {
+    -ms-flex-preferred-size: 41.667%;
+    flex-basis: 41.667%;
+    max-width: 41.667%;
+  }
+
+  /* line 750, ../scss/calc.scss */
+  .col-lg-6 {
+    -ms-flex-preferred-size: 50%;
+    flex-basis: 50%;
+    max-width: 50%;
+  }
+
+  /* line 756, ../scss/calc.scss */
+  .col-lg-7 {
+    -ms-flex-preferred-size: 58.333%;
+    flex-basis: 58.333%;
+    max-width: 58.333%;
+  }
+
+  /* line 762, ../scss/calc.scss */
+  .col-lg-8 {
+    -ms-flex-preferred-size: 66.667%;
+    flex-basis: 66.667%;
+    max-width: 66.667%;
+  }
+
+  /* line 768, ../scss/calc.scss */
+  .col-lg-9 {
+    -ms-flex-preferred-size: 75%;
+    flex-basis: 75%;
+    max-width: 75%;
+  }
+
+  /* line 774, ../scss/calc.scss */
+  .col-lg-10 {
+    -ms-flex-preferred-size: 83.333%;
+    flex-basis: 83.333%;
+    max-width: 83.333%;
+  }
+
+  /* line 780, ../scss/calc.scss */
+  .col-lg-11 {
+    -ms-flex-preferred-size: 91.667%;
+    flex-basis: 91.667%;
+    max-width: 91.667%;
+  }
+
+  /* line 786, ../scss/calc.scss */
+  .col-lg-12 {
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+
+  /* line 792, ../scss/calc.scss */
+  .col-lg-offset-1 {
+    margin-left: 8.333%;
+  }
+
+  /* line 796, ../scss/calc.scss */
+  .col-lg-offset-2 {
+    margin-left: 16.667%;
+  }
+
+  /* line 800, ../scss/calc.scss */
+  .col-lg-offset-3 {
+    margin-left: 25%;
+  }
+
+  /* line 804, ../scss/calc.scss */
+  .col-lg-offset-4 {
+    margin-left: 33.333%;
+  }
+
+  /* line 808, ../scss/calc.scss */
+  .col-lg-offset-5 {
+    margin-left: 41.667%;
+  }
+
+  /* line 812, ../scss/calc.scss */
+  .col-lg-offset-6 {
+    margin-left: 50%;
+  }
+
+  /* line 816, ../scss/calc.scss */
+  .col-lg-offset-7 {
+    margin-left: 58.333%;
+  }
+
+  /* line 820, ../scss/calc.scss */
+  .col-lg-offset-8 {
+    margin-left: 66.667%;
+  }
+
+  /* line 824, ../scss/calc.scss */
+  .col-lg-offset-9 {
+    margin-left: 75%;
+  }
+
+  /* line 828, ../scss/calc.scss */
+  .col-lg-offset-10 {
+    margin-left: 83.333%;
+  }
+
+  /* line 832, ../scss/calc.scss */
+  .col-lg-offset-11 {
+    margin-left: 91.667%;
+  }
+
+  /* line 836, ../scss/calc.scss */
+  .start-lg {
+    -ms-flex-pack: start;
+    -webkit-box-pack: start;
+    justify-content: flex-start;
+    text-align: start;
+  }
+
+  /* line 843, ../scss/calc.scss */
+  .center-lg {
+    -ms-flex-pack: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+  }
+
+  /* line 850, ../scss/calc.scss */
+  .end-lg {
+    -ms-flex-pack: end;
+    -webkit-box-pack: end;
+    justify-content: flex-end;
+    text-align: end;
+  }
+
+  /* line 857, ../scss/calc.scss */
+  .top-lg {
+    -ms-flex-align: start;
+    -webkit-box-align: start;
+    align-items: flex-start;
+  }
+
+  /* line 863, ../scss/calc.scss */
+  .middle-lg {
+    -ms-flex-align: center;
+    -webkit-box-align: center;
+    align-items: center;
+  }
+
+  /* line 869, ../scss/calc.scss */
+  .bottom-lg {
+    -ms-flex-align: end;
+    -webkit-box-align: end;
+    align-items: flex-end;
+  }
+
+  /* line 875, ../scss/calc.scss */
+  .around-lg {
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+  }
+
+  /* line 880, ../scss/calc.scss */
+  .between-lg {
+    -ms-flex-pack: justify;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+  }
+
+  /* line 886, ../scss/calc.scss */
+  .first-lg {
+    -ms-flex-order: -1;
+    -webkit-box-ordinal-group: 0;
+    order: -1;
+  }
+
+  /* line 892, ../scss/calc.scss */
+  .last-lg {
+    -ms-flex-order: 1;
+    -webkit-box-ordinal-group: 2;
+    order: 1;
+  }
+}
+/*
+ * Calculator
+ */
+@font-face {
+  font-family: 'SalesforceSans-Bold';
+  src: url("../fonts/SalesforceSans-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: 'SalesforceSans-Regular';
+  src: url("../fonts/SalesforceSans-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: 'SalesforceSans-Light';
+  src: url("../fonts/SalesforceSans-Light.ttf") format("truetype");
+}
+@font-face {
+  font-family: 'SalesforceSans-Thin';
+  src: url("../fonts/SalesforceSans-Thin.ttf") format("truetype");
+}
+/*
+ * Global
+ */
+/* line 947, ../scss/calc.scss */
+.calculator {
+  /*
+   * Header
+   */
+  /*
+   * Layout
+   */
+  /*
+   * Results Slide
+   */
+  /*
+   * Mobile
+   */
+}
+/* line 948, ../scss/calc.scss */
+.calculator .banner {
+  height: 490px;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+/* line 954, ../scss/calc.scss */
+.calculator .banner .overlay {
+  padding: 50px;
+}
+/* line 957, ../scss/calc.scss */
+.calculator .banner h1 {
+  color: #fff;
+  font-size: 40px;
+  text-align: center;
+}
+/* line 964, ../scss/calc.scss */
+.calculator * {
+  box-sizing: border-box !important;
+  font-family: 'SalesforceSans-Regular', sans-serif;
+}
+/* line 969, ../scss/calc.scss */
+.calculator p {
+  font-size: 15px;
+}
+/* line 972, ../scss/calc.scss */
+.calculator a {
+  font-weight: 300;
+}
+/* line 975, ../scss/calc.scss */
+.calculator body {
+  margin: 0;
+}
+/* line 978, ../scss/calc.scss */
+.calculator h2 {
+  font-weight: 300;
+}
+/* line 981, ../scss/calc.scss */
+.calculator table {
+  float: none;
+}
+/* line 984, ../scss/calc.scss */
+.calculator ::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  opacity: 0.3;
+  color: #414142;
+  font-style: italic;
+}
+/* line 989, ../scss/calc.scss */
+.calculator ::-moz-placeholder {
+  /* Firefox 19+ */
+  opacity: 0.3;
+  color: #414142;
+  font-style: italic;
+}
+/* line 994, ../scss/calc.scss */
+.calculator :-ms-input-placeholder {
+  /* IE 10+ */
+  opacity: 0.3;
+  color: #414142;
+  font-style: italic;
+}
+/* line 999, ../scss/calc.scss */
+.calculator :-moz-placeholder {
+  /* Firefox 18- */
+  opacity: 0.3;
+  color: #414142;
+  font-style: italic;
+}
+/* line 1004, ../scss/calc.scss */
+.calculator .button {
+  display: inline-block;
+  background: #036cb6;
+  text-decoration: none;
+  color: #fff;
+  padding: 10px 35px;
+  border-radius: 50px;
+  margin: 0 5px 5px 0;
+  pointer-events: all;
+}
+/* line 1013, ../scss/calc.scss */
+.calculator .button.disabled {
+  pointer-events: none;
+  opacity: 0.5;
+}
+/* line 1018, ../scss/calc.scss */
+.calculator input[type=text], .calculator input[type=number], .calculator input[type=email] {
+  background: #f2f3f4;
+  min-width: 10px;
+  width: 100%;
+  border: 0;
+  padding: 10px 15px;
+  font-size: 18px;
+  float: none;
+  transition: border 0s;
+}
+/* line 1029, ../scss/calc.scss */
+.calculator .single-input h2 {
+  max-width: 550px;
+}
+/* line 1032, ../scss/calc.scss */
+.calculator .single-input div {
+  max-width: 300px;
+}
+/* line 1036, ../scss/calc.scss */
+.calculator .money, .calculator .percent {
+  display: flex;
+  position: relative;
+}
+/* line 1039, ../scss/calc.scss */
+.calculator .money input, .calculator .percent input {
+  flex: 1;
+  margin: 0;
+}
+/* line 1043, ../scss/calc.scss */
+.calculator .money div, .calculator .percent div {
+  display: flex;
+  align-items: center;
+  background: #8cc6ec;
+}
+/* line 1048, ../scss/calc.scss */
+.calculator .money span, .calculator .percent span {
+  padding-left: 12px;
+  padding-right: 12px;
+  color: #fff;
+  font-size: 18px;
+}
+/* line 1055, ../scss/calc.scss */
+.calculator .select {
+  position: relative;
+  display: table;
+}
+/* line 1058, ../scss/calc.scss */
+.calculator .select select {
+  background: #f2f3f4;
+  width: 300px;
+  border-radius: 0;
+  border: 0;
+  font-size: 18px;
+  color: #7b828c;
+  padding: 10px 55px 10px 15px;
+  cursor: pointer;
+  -webkit-appearance: none;
+}
+/* line 1069, ../scss/calc.scss */
+.calculator .select svg {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  right: 10px;
+  top: 14px;
+  bottom: 0;
+  pointer-events: none;
+}
+/* line 1077, ../scss/calc.scss */
+.calculator .select svg polyline {
+  fill: none;
+  stroke: #7b828c;
+  stroke-width: 2;
+}
+/* line 1084, ../scss/calc.scss */
+.calculator label {
+  font-size: 15px;
+  color: #8cc6ec;
+}
+/* line 1088, ../scss/calc.scss */
+.calculator .label-line {
+  height: 20px;
+  margin-top: 2px;
+  border-top: 1px solid #8cc6ec;
+  border-right: 1px solid #8cc6ec;
+}
+/* line 1094, ../scss/calc.scss */
+.calculator .label-line-alt {
+  height: 20px;
+  margin-top: 2px;
+  border-top: 1px solid #8cc6ec;
+  border-left: 1px solid #8cc6ec;
+}
+/* line 1100, ../scss/calc.scss */
+.calculator .digital {
+  padding-right: 20px;
+}
+/* line 1104, ../scss/calc.scss */
+.calculator .traditional label {
+  color: #4bb9b4;
+}
+/* line 1107, ../scss/calc.scss */
+.calculator .traditional .label-line {
+  border-color: #4bb9b4;
+}
+/* line 1110, ../scss/calc.scss */
+.calculator .traditional .label-line-alt {
+  border-color: #4bb9b4;
+}
+/* line 1113, ../scss/calc.scss */
+.calculator .traditional .money div, .calculator .traditional .percent div {
+  background: #4bb9b4;
+}
+/* line 1117, ../scss/calc.scss */
+.calculator .legend {
+  margin-bottom: 20px;
+}
+/* line 1119, ../scss/calc.scss */
+.calculator .legend .digital-blue {
+  display: inline-block;
+  color: #8cc6ec;
+}
+/* line 1123, ../scss/calc.scss */
+.calculator .legend .traditional-green {
+  display: inline-block;
+  color: #4bb9b4;
+}
+/* line 1128, ../scss/calc.scss */
+.calculator .calc {
+  font-size: 15px;
+  color: #7b828c;
+  padding: 15px 0;
+}
+/* line 1133, ../scss/calc.scss */
+.calculator .calc span {
+  display: inline-block;
+  position: relative;
+  background: #fff;
+  padding: 0 15px;
+  z-index: 2;
+}
+/* line 1141, ../scss/calc.scss */
+.calculator .calc-line {
+  width: 100%;
+  color: #7b828c;
+  border: 1px solid #ccc;
+  height: 40px;
+  position: relative;
+  top: -26px;
+  margin-bottom: -26px;
+}
+/* line 1150, ../scss/calc.scss */
+.calculator .calc-line span {
+  position: relative;
+  padding: 0 20px;
+  bottom: -25px;
+  background: #fff;
+}
+/* line 1156, ../scss/calc.scss */
+.calculator .calc-line:before {
+  content: '';
+  display: block;
+  width: 80%;
+  height: 10px;
+  position: absolute;
+  top: -2px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  background-color: #fff;
+}
+/* line 1170, ../scss/calc.scss */
+.calculator .ng-submitted .ng-valid {
+  border: 0;
+}
+/* line 1173, ../scss/calc.scss */
+.calculator .ng-submitted .ng-invalid, .calculator .ng-submitted .my-invalid {
+  border: 2px solid red;
+}
+/* line 1177, ../scss/calc.scss */
+.calculator .threshold-warning {
+  opacity: 0;
+  transition: opacity 0.5s;
+  color: orange;
+}
+/* line 1186, ../scss/calc.scss */
+.calculator .calc-header {
+  width: 100%;
+  padding: 70px 60px 40px 60px;
+  background: #1a2f41;
+  font-size: 15px;
+  position: relative;
+  z-index: 10;
+}
+/* line 1194, ../scss/calc.scss */
+.calculator .calc-header .progress {
+  width: 100%;
+  height: 4px;
+  background: #f2f3f4;
+  position: relative;
+}
+/* line 1200, ../scss/calc.scss */
+.calculator .calc-header .current-progress {
+  background: #e2704d;
+  width: 5%;
+  height: 5px;
+  transition: all 1s ease-in-out;
+}
+/* line 1206, ../scss/calc.scss */
+.calculator .calc-header .step {
+  position: absolute;
+  top: -41px;
+  width: 80px;
+}
+/* line 1211, ../scss/calc.scss */
+.calculator .calc-header .step a {
+  transition: all 0.3s;
+  transition-delay: 0.5s;
+  text-decoration: none;
+  color: #f2f3f4;
+  pointer-events: none;
+}
+/* line 1219, ../scss/calc.scss */
+.calculator .calc-header .circle {
+  transition: all 0.3s;
+  transition-delay: 0.5s;
+  width: 11px;
+  height: 11px;
+  background: #fff;
+  border-radius: 100%;
+  margin: 18px auto 0;
+  position: relative;
+  top: -4px;
+}
+/* line 1230, ../scss/calc.scss */
+.calculator .calc-header #company {
+  left: calc(5% - 40px);
+}
+/* line 1233, ../scss/calc.scss */
+.calculator .calc-header #revenue {
+  left: calc(20% - 40px);
+}
+/* line 1236, ../scss/calc.scss */
+.calculator .calc-header #orderValue {
+  left: calc(35% - 40px);
+}
+/* line 1239, ../scss/calc.scss */
+.calculator .calc-header #error {
+  left: calc(50% - 40px);
+}
+/* line 1242, ../scss/calc.scss */
+.calculator .calc-header #team {
+  left: calc(65% - 40px);
+}
+/* line 1245, ../scss/calc.scss */
+.calculator .calc-header #benefits {
+  left: calc(80% - 40px);
+}
+/* line 1248, ../scss/calc.scss */
+.calculator .calc-header #results {
+  left: calc(95% - 40px);
+}
+/* line 1252, ../scss/calc.scss */
+.calculator .calc-header .complete a {
+  color: #e2704d;
+  pointer-events: all;
+}
+/* line 1256, ../scss/calc.scss */
+.calculator .calc-header .complete .circle {
+  background: #e2704d;
+}
+/* line 1261, ../scss/calc.scss */
+.calculator .calc-header .current .circle {
+  width: 15px;
+  height: 15px;
+  top: -6px;
+}
+/* line 1268, ../scss/calc.scss */
+.calculator .total {
+  padding: 30px;
+  background: #036cb6;
+  position: absolute;
+  width: 300px;
+  right: 0;
+  top: 114px;
+  height: 230px;
+  z-index: 5;
+  display: none;
+}
+/* line 1278, ../scss/calc.scss */
+.calculator .total .revIncrease {
+  position: absolute;
+  top: 30px;
+}
+/* line 1282, ../scss/calc.scss */
+.calculator .total .marginIncrease {
+  position: absolute;
+  bottom: 30px;
+}
+/* line 1286, ../scss/calc.scss */
+.calculator .total h2 {
+  color: #fff;
+  font-size: 34px;
+  margin: 0;
+}
+/* line 1291, ../scss/calc.scss */
+.calculator .total p {
+  color: #fff;
+  font-weight: 300;
+}
+/* line 1294, ../scss/calc.scss */
+.calculator .total p:last-child {
+  margin: 0;
+}
+/* line 1303, ../scss/calc.scss */
+.calculator .calc-container {
+  max-width: 1100px;
+  margin: 20px auto;
+  position: relative;
+  top: -350px;
+  flex-direction: column;
+  box-shadow: 0 0 25px 1px rgba(0, 0, 0, 0.15);
+  background: #fff;
+  margin-bottom: -270px;
+}
+/* line 1313, ../scss/calc.scss */
+.calculator #modal {
+  position: fixed;
+  background: rgba(0, 0, 0, 0.3);
+  display: none;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: 10001;
+  align-items: center;
+}
+/* line 1324, ../scss/calc.scss */
+.calculator #modal .modal-box {
+  max-width: 600px;
+  background: #fff;
+  margin: 0 auto;
+  padding: 50px;
+  transition: width 0.5s, height 0.5s;
+  position: relative;
+  max-height: 100%;
+  overflow-y: scroll;
+}
+/* line 1333, ../scss/calc.scss */
+.calculator #modal .modal-box h2 {
+  margin-bottom: 10px;
+}
+/* line 1337, ../scss/calc.scss */
+.calculator #modal .close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 15px;
+}
+/* line 1342, ../scss/calc.scss */
+.calculator #modal .close svg {
+  cursor: pointer;
+  display: block;
+  width: 20px;
+  height: 20px;
+}
+/* line 1347, ../scss/calc.scss */
+.calculator #modal .close svg polyline {
+  stroke: #7b828c;
+  stroke-width: 1;
+}
+/* line 1353, ../scss/calc.scss */
+.calculator #modal input {
+  margin-bottom: 10px;
+}
+/* line 1356, ../scss/calc.scss */
+.calculator #modal .loading {
+  display: none;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: calc(100% - 100px);
+}
+/* line 1363, ../scss/calc.scss */
+.calculator #modal .loading h2 {
+  margin: 0;
+}
+/* line 1368, ../scss/calc.scss */
+.calculator .gray-bg {
+  position: absolute;
+  background: #7b828c;
+  width: 300px;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: none;
+}
+/* line 1377, ../scss/calc.scss */
+.calculator .slide {
+  display: none;
+  flex: 1;
+}
+/* line 1381, ../scss/calc.scss */
+.calculator .left, .calculator #modal {
+  padding: 50px;
+  flex: 1;
+  float: none;
+}
+/* line 1385, ../scss/calc.scss */
+.calculator .left section, .calculator #modal section {
+  margin-bottom: 90px;
+}
+/* line 1387, ../scss/calc.scss */
+.calculator .left section p, .calculator #modal section p {
+  margin-top: 40px;
+}
+/* line 1391, ../scss/calc.scss */
+.calculator .left h2, .calculator #modal h2 {
+  color: #036cb6;
+  margin-top: 0;
+  font-size: 24px;
+  line-height: 34px;
+  margin-bottom: 25px;
+}
+/* line 1397, ../scss/calc.scss */
+.calculator .left h2 b, .calculator #modal h2 b {
+  font-weight: 500;
+}
+/* line 1401, ../scss/calc.scss */
+.calculator .left p, .calculator #modal p {
+  color: #414142;
+  line-height: 24px;
+  font-weight: 300;
+}
+/* line 1407, ../scss/calc.scss */
+.calculator .right {
+  width: 300px;
+  background: #7b828c;
+  color: #fff;
+  line-height: 25px;
+  position: relative;
+  z-index: 2;
+  float: none;
+}
+/* line 1415, ../scss/calc.scss */
+.calculator .right h4, .calculator .right p {
+  color: #fff;
+}
+/* line 1418, ../scss/calc.scss */
+.calculator .right h4 {
+  font-size: 15px;
+  font-weight: 500;
+  margin-top: 25px;
+  margin-bottom: 10px;
+}
+/* line 1423, ../scss/calc.scss */
+.calculator .right h4:first-child {
+  margin-top: 20px;
+}
+/* line 1427, ../scss/calc.scss */
+.calculator .right p {
+  font-weight: 300;
+  line-height: 24px;
+  margin-bottom: 25px;
+}
+/* line 1431, ../scss/calc.scss */
+.calculator .right p:last-child {
+  margin-bottom: 20px;
+}
+/* line 1435, ../scss/calc.scss */
+.calculator .right .tooltip {
+  padding-top: 50px;
+  padding-right: 30px;
+  padding-bottom: 50px;
+  padding-left: 30px;
+}
+/* line 1441, ../scss/calc.scss */
+.calculator .right section {
+  left: 0 !important;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+}
+/* line 1444, ../scss/calc.scss */
+.calculator .right section:first-child {
+  border: 0;
+}
+/* line 1446, ../scss/calc.scss */
+.calculator .right section:first-child h4 {
+  margin-top: 0;
+}
+/* line 1451, ../scss/calc.scss */
+.calculator .right section:last-child p {
+  margin-bottom: 0;
+}
+/* line 1457, ../scss/calc.scss */
+.calculator .right .tooltip {
+  padding-top: 280px;
+}
+/* line 1460, ../scss/calc.scss */
+.calculator #intro .right .tooltip {
+  padding-top: 50px;
+}
+/* line 1463, ../scss/calc.scss */
+.calculator .slide-section {
+  position: relative;
+  left: -25px;
+  opacity: 0;
+}
+/* line 1468, ../scss/calc.scss */
+.calculator .continue, .calculator .back {
+  float: right;
+  font-size: 15px;
+}
+/* line 1473, ../scss/calc.scss */
+.calculator .continue svg polyline {
+  fill: none;
+  stroke: #fff;
+  stroke-width: 3;
+}
+/* line 1479, ../scss/calc.scss */
+.calculator .back {
+  background: none;
+  color: #036cb6;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+/* line 1485, ../scss/calc.scss */
+.calculator .back:hover svg {
+  left: -6px;
+}
+/* line 1489, ../scss/calc.scss */
+.calculator .back svg {
+  position: relative;
+  left: 0;
+  transition: all 0.3s;
+}
+/* line 1493, ../scss/calc.scss */
+.calculator .back svg polyline {
+  fill: none;
+  stroke: #036cb6;
+  stroke-width: 3;
+}
+/* line 1502, ../scss/calc.scss */
+.calculator #intro {
+  display: flex;
+}
+/* line 1504, ../scss/calc.scss */
+.calculator #intro .col-sm-6 {
+  margin-bottom: 20px;
+}
+/* line 1507, ../scss/calc.scss */
+.calculator #intro .circle-icon {
+  width: 100px;
+  height: 100px;
+  margin-right: 20px;
+}
+/* line 1513, ../scss/calc.scss */
+.calculator #slide-1 .col-sm-6 {
+  margin-bottom: 20px;
+}
+/* line 1517, ../scss/calc.scss */
+.calculator #intro-question h2 {
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+/* line 1521, ../scss/calc.scss */
+.calculator #intro-question p {
+  margin-top: 0;
+}
+/* line 1524, ../scss/calc.scss */
+.calculator #intro-question svg {
+  display: none;
+}
+/* line 1528, ../scss/calc.scss */
+.calculator #industry-question .row {
+  margin-bottom: -20px;
+}
+/* line 1531, ../scss/calc.scss */
+.calculator .warning, .calculator .warning-2, .calculator .warning-percent {
+  opacity: 0;
+  text-align: right;
+  transition: opacity 0.5s;
+  color: red !important;
+}
+/* line 1537, ../scss/calc.scss */
+.calculator .tile-radio {
+  display: none;
+}
+/* line 1539, ../scss/calc.scss */
+.calculator .tile-radio + label {
+  display: inline-block;
+  box-shadow: 0 0 5px #aaa;
+  width: 100%;
+  cursor: pointer;
+  padding: 15px 25px;
+  font-size: 14px;
+  transition: all 0.2s;
+  height: 100%;
+}
+/* line 1549, ../scss/calc.scss */
+.calculator .tile-radio + label:hover {
+  box-shadow: 0 0 10px #aaa;
+}
+/* line 1552, ../scss/calc.scss */
+.calculator .tile-radio + label svg {
+  width: 80px;
+  height: 80px;
+  max-width: 100%;
+}
+/* line 1557, ../scss/calc.scss */
+.calculator .tile-radio + label p {
+  width: 100%;
+  margin: 5px 0 0 0;
+  color: #7b828c;
+}
+/* line 1563, ../scss/calc.scss */
+.calculator .tile-radio:checked + label {
+  box-shadow: 0 0 10px #036cb6;
+  transition: all 0.2s;
+}
+/* line 1566, ../scss/calc.scss */
+.calculator .tile-radio:checked + label:hover {
+  box-shadow: 0 0 20px #036cb6;
+}
+/* line 1573, ../scss/calc.scss */
+.calculator #results-page {
+  width: 100%;
+  display: none;
+  padding: 50px;
+}
+/* line 1577, ../scss/calc.scss */
+.calculator #results-page .download {
+  float: right;
+  margin-bottom: 50px;
+}
+/* line 1581, ../scss/calc.scss */
+.calculator #results-page .continue {
+  float: none;
+}
+/* line 1588, ../scss/calc.scss */
+.calculator #slide-6 .row {
+  margin-bottom: 40px;
+  align-items: center;
+}
+/* line 1591, ../scss/calc.scss */
+.calculator #slide-6 .row p {
+  margin: 0;
+}
+/* line 1595, ../scss/calc.scss */
+.calculator #slide-6 hr {
+  float: none;
+  margin-bottom: 55px;
+  border-color: #ccc;
+}
+/* line 1600, ../scss/calc.scss */
+.calculator #slide-6 .tip p {
+  color: #7b828c;
+}
+/* line 1609, ../scss/calc.scss */
+.calculator #slide-7 .button {
+  float: none;
+}
+/* line 1612, ../scss/calc.scss */
+.calculator #slide-7 .roi {
+  max-width: 650px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+}
+/* line 1618, ../scss/calc.scss */
+.calculator #slide-7 .download {
+  margin-top: 10px;
+}
+/* line 1623, ../scss/calc.scss */
+.calculator #slide-7 section, .calculator #results-page section {
+  margin-bottom: 120px;
+}
+/* line 1625, ../scss/calc.scss */
+.calculator #slide-7 section:last-child, .calculator #results-page section:last-child {
+  margin-bottom: 0;
+}
+/* line 1629, ../scss/calc.scss */
+.calculator #slide-7 .text-section, .calculator #results-page .text-section {
+  max-width: 650px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 1633, ../scss/calc.scss */
+.calculator #slide-7 .text-section h2, .calculator #results-page .text-section h2 {
+  font-size: 32px;
+  margin-bottom: 40px;
+}
+/* line 1637, ../scss/calc.scss */
+.calculator #slide-7 .text-section h3, .calculator #results-page .text-section h3 {
+  margin-top: 40px;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+/* line 1642, ../scss/calc.scss */
+.calculator #slide-7 .text-section p, .calculator #results-page .text-section p {
+  margin-top: 0;
+  margin-bottom: 15px;
+  line-height: 28px;
+}
+/* line 1647, ../scss/calc.scss */
+.calculator #slide-7 .text-section ul, .calculator #results-page .text-section ul {
+  margin-left: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+/* line 1653, ../scss/calc.scss */
+.calculator #slide-7 .no-margin, .calculator #results-page .no-margin {
+  margin: 0;
+  color: #414142;
+  font-weight: 300;
+  font-size: 15px;
+}
+/* line 1659, ../scss/calc.scss */
+.calculator #slide-7 .chart-text, .calculator #results-page .chart-text {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  max-width: 650px;
+  color: #414142;
+  font-weight: 300;
+  line-height: 28px;
+  font-size: 15px;
+}
+/* line 1672, ../scss/calc.scss */
+.calculator .result-numbers p {
+  margin: 0 0 5px 0;
+  line-height: normal;
+}
+/* line 1677, ../scss/calc.scss */
+.calculator .result-numbers p:first-child {
+  font-size: 36px;
+  color: #1a2f41;
+  font-weight: 300;
+  margin: 0;
+}
+/* line 1683, ../scss/calc.scss */
+.calculator .result-numbers p:nth-child(2) {
+  color: #7b828c;
+  font-weight: 300;
+  margin-top: 5px;
+}
+/* line 1689, ../scss/calc.scss */
+.calculator .roi {
+  margin-top: 70px;
+}
+/* line 1691, ../scss/calc.scss */
+.calculator .roi p {
+  font-size: 36px;
+  color: #414142;
+  font-weight: 300;
+  margin: 0;
+  line-height: normal;
+}
+/* line 1698, ../scss/calc.scss */
+.calculator .roi h2 {
+  font-size: 32px;
+}
+/* line 1702, ../scss/calc.scss */
+.calculator .revenue {
+  position: relative;
+  z-index: 5;
+}
+/* line 1707, ../scss/calc.scss */
+.calculator .cost div p:first-child {
+  color: #e2704d;
+}
+/* line 1711, ../scss/calc.scss */
+.calculator .margin {
+  margin: 0 -10px;
+}
+/* line 1713, ../scss/calc.scss */
+.calculator .margin div p:first-child {
+  color: #036cb6;
+}
+/* line 1717, ../scss/calc.scss */
+.calculator .cost-legend {
+  margin: 20px 0 0 0;
+  position: absolute;
+  z-index: 5;
+}
+/* line 1721, ../scss/calc.scss */
+.calculator .cost-legend div {
+  display: inline-block;
+  margin-right: 15px;
+}
+/* line 1725, ../scss/calc.scss */
+.calculator .cost-legend > div::before {
+  content: '';
+  margin: 0 5px -2px 0;
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+}
+/* line 1732, ../scss/calc.scss */
+.calculator .cost-legend .before::before {
+  background: #e2704d;
+}
+/* line 1735, ../scss/calc.scss */
+.calculator .cost-legend .after::before {
+  background: #ffa380;
+}
+/* line 1739, ../scss/calc.scss */
+.calculator .margin-legend {
+  margin: 20px 0 0 0;
+  position: absolute;
+  z-index: 5;
+}
+/* line 1743, ../scss/calc.scss */
+.calculator .margin-legend > div {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  margin-bottom: -2px;
+}
+/* line 1749, ../scss/calc.scss */
+.calculator .margin-legend div:nth-child(3), .calculator .margin-legend div:nth-child(6) {
+  width: 50px;
+  margin: 0 15px 0 5px;
+}
+/* line 1753, ../scss/calc.scss */
+.calculator .margin-legend .before1 {
+  background: #cfe6f7;
+}
+/* line 1756, ../scss/calc.scss */
+.calculator .margin-legend .before2 {
+  background: #e1f1f1;
+}
+/* line 1759, ../scss/calc.scss */
+.calculator .margin-legend .after1 {
+  background: #8cc6ec;
+}
+/* line 1762, ../scss/calc.scss */
+.calculator .margin-legend .after2 {
+  background: #48bab4;
+}
+/* line 1766, ../scss/calc.scss */
+.calculator .year-legend {
+  margin: 20px 0 0 0;
+  position: absolute;
+  z-index: 5;
+}
+/* line 1770, ../scss/calc.scss */
+.calculator .year-legend div {
+  display: inline-block;
+  margin-right: 15px;
+}
+/* line 1774, ../scss/calc.scss */
+.calculator .year-legend > div::before {
+  content: '';
+  margin: 0 5px -2px 0;
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+}
+/* line 1781, ../scss/calc.scss */
+.calculator .year-legend .revenue::before {
+  background: #036cb6;
+}
+/* line 1784, ../scss/calc.scss */
+.calculator .year-legend .break-even::before {
+  background: #e2704d;
+}
+/* line 1788, ../scss/calc.scss */
+.calculator .split-chart {
+  align-items: center;
+  position: relative;
+  top: -30px;
+}
+/* line 1793, ../scss/calc.scss */
+.calculator .split-chart .oldRev .oldRevTitle {
+  position: relative;
+  z-index: 1;
+  top: -20px;
+}
+/* line 1798, ../scss/calc.scss */
+.calculator .split-chart .oldRev #oldRevChart {
+  width: 100%;
+  max-width: 200px;
+  height: 200px;
+  margin: auto;
+  position: relative;
+}
+/* line 1805, ../scss/calc.scss */
+.calculator .split-chart .oldRev .oldRevLabel {
+  position: absolute;
+  font-size: 12px;
+  line-height: 14px;
+  width: 100%;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+/* line 1817, ../scss/calc.scss */
+.calculator .split-chart .newRev .newRevTitle {
+  position: relative;
+  z-index: 1;
+  top: 30px;
+}
+/* line 1822, ../scss/calc.scss */
+.calculator .split-chart .newRev #newRevChart {
+  width: 100%;
+  max-width: 350px;
+  height: 350px;
+  margin: auto;
+  position: relative;
+}
+/* line 1829, ../scss/calc.scss */
+.calculator .split-chart .newRev .newRevLabel {
+  position: absolute;
+  font-size: 16px;
+  line-height: 18px;
+  width: 100%;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+/* line 1840, ../scss/calc.scss */
+.calculator .split-chart .revenue-legend {
+  flex: 1;
+  display: flex;
+  z-index: 5;
+  text-align: left;
+}
+/* line 1845, ../scss/calc.scss */
+.calculator .split-chart .revenue-legend .left-legend {
+  margin-right: 20px;
+}
+/* line 1848, ../scss/calc.scss */
+.calculator .split-chart .revenue-legend .left-legend div, .calculator .split-chart .revenue-legend .right-legend div {
+  margin-bottom: 10px;
+}
+/* line 1851, ../scss/calc.scss */
+.calculator .split-chart .revenue-legend .left-legend div::before, .calculator .split-chart .revenue-legend .right-legend div::before {
+  content: '';
+  margin: 0 5px -2px 0;
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+}
+/* line 1858, ../scss/calc.scss */
+.calculator .split-chart .revenue-legend .digital::before {
+  background: #8cc6ec;
+}
+/* line 1861, ../scss/calc.scss */
+.calculator .split-chart .revenue-legend .direct::before {
+  background: #4bb9b4;
+}
+/* line 1864, ../scss/calc.scss */
+.calculator .split-chart .revenue-legend .inside::before {
+  background: #badedc;
+}
+/* line 1867, ../scss/calc.scss */
+.calculator .split-chart .revenue-legend .partner::before {
+  background: #e1f0ee;
+}
+/* line 1872, ../scss/calc.scss */
+.calculator .chart {
+  width: 100%;
+  min-height: 500px;
+}
+/* line 1876, ../scss/calc.scss */
+.calculator #assumptions {
+  color: #414142;
+  width: auto;
+}
+/* line 1879, ../scss/calc.scss */
+.calculator #assumptions td, .calculator #assumptions th {
+  padding: 8px 16px;
+  border-bottom: 1px solid #f2f3f4;
+  font-weight: 300;
+}
+/* line 1884, ../scss/calc.scss */
+.calculator #assumptions td:first-child, .calculator #assumptions th:first-child {
+  text-align: left;
+}
+/* line 1887, ../scss/calc.scss */
+.calculator #assumptions td:not(:last-child), .calculator #assumptions th:not(:last-child) {
+  border-right: 1px solid #f2f3f4;
+}
+/* line 1891, ../scss/calc.scss */
+.calculator #assumptions tr:nth-child(odd) {
+  background: none;
+}
+/* line 1894, ../scss/calc.scss */
+.calculator #assumptions th {
+  color: #8cc6ec;
+  border-bottom: 1px solid rgba(123, 130, 140, 0.3);
+  border-top: 0;
+}
+/* line 1899, ../scss/calc.scss */
+.calculator #assumptions tr:last-child td {
+  border-bottom: 0;
+}
+/* line 1902, ../scss/calc.scss */
+.calculator #assumptions .border-bottom td {
+  border-bottom: 1px solid rgba(123, 130, 140, 0.3);
+}
+/* line 1906, ../scss/calc.scss */
+.calculator small {
+  display: block;
+  font-style: italic;
+  margin-top: 40px;
+  font-size: 12px;
+  line-height: 18px;
+  color: #7b828c;
+}
+@media screen and (max-width: 900px) {
+  /* line 1919, ../scss/calc.scss */
+  .calculator .right, .calculator .gray-bg, .calculator .calc-header {
+    display: none !important;
+    height: 0;
+  }
+  /* line 1923, ../scss/calc.scss */
+  .calculator .total {
+    width: 100%;
+    height: auto;
+    padding: 15px;
+    position: relative;
+    top: auto;
+    flex-flow: row wrap;
+  }
+  /* line 1930, ../scss/calc.scss */
+  .calculator .total .revIncrease {
+    position: relative;
+    flex: 1 1 100%;
+    top: auto;
+    padding: 10px;
+  }
+  /* line 1937, ../scss/calc.scss */
+  .calculator .total .marginIncrease {
+    position: relative;
+    flex: 1 1 100%;
+    bottom: auto;
+    padding: 10px;
+  }
+}
+@media screen and (max-width: 767px) {
+  /* line 1948, ../scss/calc.scss */
+  .calculator .banner h1 {
+    font-size: 24px;
+  }
+  /* line 1951, ../scss/calc.scss */
+  .calculator #modal {
+    padding: 0;
+  }
+  /* line 1954, ../scss/calc.scss */
+  .calculator .left {
+    padding: 20px;
+  }
+  /* line 1958, ../scss/calc.scss */
+  .calculator #slide-7 section, .calculator #results-page section {
+    margin-bottom: 80px;
+  }
+}
+
+@media all {
+  /* line 1968, ../scss/calc.scss */
+  .page-break {
+    display: none;
+  }
+}
+@media print {
+  /* line 1974, ../scss/calc.scss */
+  .header, .footer, .banner, .callus, .button {
+    display: none;
+  }
+
+  /* line 1977, ../scss/calc.scss */
+  .page-break {
+    display: block;
+    page-break-before: always;
+  }
+
+  /* line 1981, ../scss/calc.scss */
+  .mainwrapper {
+    margin-top: 0;
+  }
+
+  /* line 1985, ../scss/calc.scss */
+  .calculator .calc-container {
+    top: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    box-shadow: none;
+  }
+  /* line 1991, ../scss/calc.scss */
+  .calculator .calc-header {
+    display: none;
+  }
+  /* line 1994, ../scss/calc.scss */
+  .calculator section {
+    margin-bottom: 50px !important;
+  }
+}
+/* line 2000, ../scss/calc.scss */
+.calculations {
+  max-width: 650px;
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+/* line 2009, ../scss/calc.scss */
+.calculations > div {
+  display: inline-block;
+  padding: 0 5px;
+  position: relative;
+  top: 0;
+}
+/* line 2014, ../scss/calc.scss */
+.calculations > div:first-child {
+  padding-left: 0;
+}
+/* line 2017, ../scss/calc.scss */
+.calculations > div:last-child {
+  padding-right: 0;
+}
+
+/* line 2023, ../scss/calc.scss */
+.pdf {
+  position: absolute;
+  pointer-events: none;
+  opacity: 0;
+  width: 1000px !important;
+  height: 500px !important;
+}
+
+/* line 2031, ../scss/calc.scss */
+.footercta {
+  display: none;
+}
