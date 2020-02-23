@@ -1,13 +1,13 @@
 {
   "name": "cloudcraze",
   "version": "1.0.0",
-  "description": "",
+  "description": "cc thing",
   "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "gulp": "gulp"
   },
-  "author": "",
+  "author": "allison lautz",
   "license": "ISC",
   "devDependencies": {
     "browser-sync": "^2.26.7",
@@ -19,5 +19,13 @@
   },
   "dependencies": {
     "npm": "^6.10.2"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AllisonLautz/cloudcraze.git"
+  },
+  "bugs": {
+    "url": "https://github.com/AllisonLautz/cloudcraze/issues"
+  },
+  "homepage": "https://github.com/AllisonLautz/cloudcraze#readme"
 }
